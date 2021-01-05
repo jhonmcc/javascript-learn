@@ -11,6 +11,7 @@ class Carro{
 
     acelera(){
         if (this.acao == true){
+            console.log('carro ligado');
             console.log('vruummm');
         }
         else{
