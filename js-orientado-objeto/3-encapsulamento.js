@@ -1,7 +1,7 @@
 // proposta de encapsuamento das propiedades utilizando #
 
 class Conta{
-    var1;
+    agencia;
     #saldo;
 
     setSaldo(value){
@@ -12,9 +12,10 @@ class Conta{
     }
 }
 
-const obj1 = new Conta();
-obj1.var1 = 'test';
-// obj1.#saldo = 'private' nao da pra manipular assim é necessário ter setters e getters
-obj1.setSaldo(123);
-console.log(obj1)
-console.log(obj1.getSaldo());
+const contaTeste = new Conta();
+contaTeste.agencia = 'test';
+// contaTeste.#saldo = 0 nao da pra manipular assim é necessário ter setters e getters
+contaTeste.setSaldo(123);
+console.log(contaTeste)
+console.log(contaTeste.getSaldo());
+
