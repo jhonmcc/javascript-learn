@@ -1,0 +1,21 @@
+{
+  "name": "javascript-learn",
+  "version": "1.0.0",
+  "description": "* Requisitos para interpretação do javascript \r - instalado o nodejs a partir da versao 13, ele permite trabalhar com modularização do js.\r     - caso precise intercalar entre verssões deixarei um link sobre como fazer isso logo abaixo\r         - :) logo mais jogo o link aqui",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jhonmcc/javascript-learn.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "module",
+  "bugs": {
+    "url": "https://github.com/jhonmcc/javascript-learn/issues"
+  },
+  "homepage": "https://github.com/jhonmcc/javascript-learn#readme"
+}
