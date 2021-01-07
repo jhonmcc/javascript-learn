@@ -12,4 +12,4 @@ testCliente.nome = "Teste Nome";
 testCliente.idade = 99;
 testCliente.saudacao();
 
-// node 4-modularizacao.js para realizar o teste
+// node 4-modularizacao.js para realizar o teste 
