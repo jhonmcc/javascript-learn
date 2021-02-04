@@ -1,8 +1,8 @@
 // atributos staticos sao utilizados para definir variaveis que sofrerao modificacao independente do instanciamento do obj
 class Cliente {
     static contIntancias = 0;
-    nome;
-    #cpf;
+    nome; // é recomendavel dar origem nas variaveis no metodo construtor
+    #cpf; // é recomendavel dar origem nas variaveis no metodo construtor e utilizar os modificadores quando for privado
 
     get cpf(){
         return this.#cpf;
