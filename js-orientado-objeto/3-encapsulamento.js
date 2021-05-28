@@ -4,6 +4,11 @@ class Conta{
     agencia;
     #saldo;
 
+    _metodoPrivado(){
+        // é possível criar também metodos privados colocando o _ (underline)
+        return true
+    }
+
     setSaldo(value){
         this.#saldo = value;
     }
