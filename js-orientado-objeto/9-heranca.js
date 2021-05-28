@@ -29,16 +29,24 @@ export class Conta{
         const saque = this.sacar(valor)
         conta.depositar(saque)
     }
+
+    hello_super(){
+        return 'chamado pelo metodo super'
+    }
 }
 
 export class ContaCorrente extends Conta{
-    // super(saldoInicial, nome, agencia) // quando é herdado de um outro arquivo
     static numContasCorrente = 0
+    constructor(saldoInicial, nome, agencia){
+    super(saldoInicial, nome, agencia) // super chama o contrutor da classe pai
+    }
 }
 
 export class ContaPoupanca extends Conta{
-    // super(saldoInicial, nome, agencia) // quando é herdado de um outro arquivo
     static numContasPoupanca = 0
+    constructor(saldoInicial, nome, agencia){
+        super(saldoInicial, nome, agencia) // super chama o contrutor da classe pai
+    }
 }
 
 
@@ -46,7 +54,6 @@ const corrente = new ContaCorrente(0, 'CCorrente', 123)
 const poupanca = new ContaPoupanca(0, 'CPoupanca', 321)
 poupanca.depositar(50)
 poupanca.transferir(50, corrente)
-
 
 console.log(poupanca)
 console.log(corrente)
